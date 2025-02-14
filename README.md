@@ -5,19 +5,19 @@ A RESTful API built with Node.js, Express, and MongoDB (via Mongoose) to query p
 
 ## Features
 
-- **Dynamic Querying:**  
+- #Dynamic Querying:  
   Filter products based on:
   - Boolean fields (e.g., `feature`)
   - String matching (e.g., `company` and `name`)
   - Numeric filtering (e.g., `price` and `rating` using operators such as `>`, `>=`, `<`, `<=`, `=`)
 
-- **Sorting & Field Selection:**  
+- #Sorting & Field Selection:  
   Sort results by one or multiple fields and select specific fields to return.
 
-- **Pagination:**  
+- #Pagination: 
   Efficiently paginate through large datasets with customizable page and limit parameters.
 
-- **Static Query Endpoint:**  
+- #Static Query Endpoint: 
   A simple endpoint to return a static set of product fields (name and price).
 
 ## API Endpoints
@@ -25,17 +25,17 @@ A RESTful API built with Node.js, Express, and MongoDB (via Mongoose) to query p
 ### GET `/api/v1/products`
 Returns a list of products based on provided query parameters.
 
-**Query Parameters:**
+#**Query Parameters:**
 
-- **feature**: `true` or `false`
-- **company**: Company name (exact match)
-- **name**: Partial or complete name (case-insensitive)
-- **sort**: Comma-separated list of fields to sort by (e.g., `price,rating`)
-- **fields**: Comma-separated list of fields to include in the response (e.g., `name,price`)
-- **numericFilters**: Numeric filters for fields such as price and rating. Format example:  
+- #**feature**: `true` or `false`
+- #**company**: Company name (exact match)
+- #**name**: Partial or complete name (case-insensitive)
+- #**sort**: Comma-separated list of fields to sort by (e.g., `price,rating`)
+- #**fields**: Comma-separated list of fields to include in the response (e.g., `name,price`)
+- #**numericFilters**: Numeric filters for fields such as price and rating. Format example:  
   `numericFilters=price>100,rating>=4`
-- **page**: Page number (default: `1`)
-- **limit**: Number of results per page (default: `10`)
+- #**page**: Page number (default: `1`)
+- #**limit**: Number of results per page (default: `10`)
 
 ### GET `/api/v1/products/static`
 Returns a static list of products with only the `name` and `price` fields.
