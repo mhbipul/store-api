@@ -113,11 +113,4 @@ Fetch all products with only the `name` and `price` fields:
 GET /api/v1/products/static
 ```
 
-## Contributing
-
-Contributions are welcome! Please fork the repository and open a pull request with your changes. For major changes, please open an issue first to discuss what you would like to change.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
 
